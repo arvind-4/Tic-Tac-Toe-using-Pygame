@@ -14,6 +14,8 @@ dev = [
     "pytest-cov>=4.0.0",
     "pytest-mock>=3.10.0",
     "ruff>=0.12.9",
+    "bandit[toml]>=1.8.6",
+    "pip-audit>=2.9.0",
 ]
 
 [tool.pytest.ini_options]
