@@ -31,3 +31,9 @@ jobs:
 
       - name: Check formatting
         run: uv run ruff format --check src/
+
+      - name: Check Bandit Security Scan
+        run: uv run bandit -r src/
+
+      - name: Check Dependency Audit
+        run: uv run pip-audit -l
